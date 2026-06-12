@@ -80,3 +80,13 @@ enableRobotsTXT = true
     name = "Tags"
     url = "/tags/"
     weight = 20
+  [[menu.main]]
+    identifier = "series"
+    name = "Series"
+    url = "/series/"
+    weight = 30
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 40
