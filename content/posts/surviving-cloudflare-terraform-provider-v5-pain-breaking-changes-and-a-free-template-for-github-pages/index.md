@@ -6,6 +6,7 @@ tags: ["automation", "cloudflare", "devops", "githubpages", "homelab", "infrastr
 series: []
 description: "Cloudflare Terraform Provider v5 brought a tsunami of breaking changes. What broke, what I learned, and a free Terraform template for GitHub Pages + Cloudflare."
 cover:
+  relative: true
   image: "95a7cdaf-1028-4cba-9137-02209dd94b94.png"
   alt: "Surviving Cloudflare Terraform Provider v5"
 draft: false

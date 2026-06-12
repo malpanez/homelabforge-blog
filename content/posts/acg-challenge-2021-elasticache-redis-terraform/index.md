@@ -6,6 +6,7 @@ tags: ["a-cloud-guru", "amazon-elasticache", "aws", "caching", "challenge", "dev
 series: []
 description: "Solving the A Cloud Guru Challenge: improve application performance using ElastiCache Redis, on a Terraform-built VPC with EC2 and RDS."
 cover:
+  relative: true
   image: "ImA_Dr2Lh.jpg"
   alt: "A Cloud Guru Challenge - ElastiCache Redis"
 draft: false

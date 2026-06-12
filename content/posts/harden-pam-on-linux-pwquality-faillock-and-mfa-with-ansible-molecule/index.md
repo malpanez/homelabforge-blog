@@ -6,6 +6,7 @@ tags: ["ansible", "debian", "devsecops", "linux", "pam", "rhel", "security", "ub
 series: []
 description: "A practical, reproducible guide for RHEL/Rocky/Alma and Debian/Ubuntu, with Ansible + Molecule examples."
 cover:
+  relative: true
   image: "3a6f6149-cdcb-4f8a-a4b3-b9092ec9dc35.png"
   alt: "Harden PAM on Linux"
 draft: false
