@@ -11,7 +11,7 @@ Built with [Hugo](https://gohugo.io/) (extended) and [PaperMod](https://github.c
 | Engine | Hugo extended `0.163.1` (pinned via `HUGO_VERSION`) |
 | Theme | PaperMod (git submodule) + brand overrides in `assets/css/extended/` |
 | Hosting | Cloudflare Pages — build `hugo --minify`, output `public/` |
-| Diagrams | Mermaid via code-block render hook, loaded only on pages that use it |
+| Diagrams | Mermaid 11 (self-hosted, fingerprinted + SRI) via code-block render hook, loaded only on pages that use it |
 | Feed | Full-content RSS at [`/rss.xml`](https://blog.homelabforge.dev/rss.xml) |
 
 ## Local development
