@@ -1,0 +1,87 @@
+/* assets/css/extended/homelabforge.css
+   Brand tokens from homelabforge.dev mapped to PaperMod variables. */
+
+:root {
+  --hlf-orange: #FF9900;
+  --hlf-orange-light: #FFB84D;
+  --hlf-orange-dark: #E68A00;
+
+  /* Light mode (PaperMod default scope) */
+  --theme: #ffffff;
+  --entry: #f6f8fa;
+  --primary: #1f2328;
+  --secondary: #4a4f57;
+  --tertiary: #f6f8fa;
+  --content: #1f2328;
+  --code-block-bg: #f6f8fa;
+  --code-bg: #f6f8fa;
+  --border: rgb(0 0 0 / 0.1);
+}
+
+.dark {
+  --theme: #0D1117;
+  --entry: #1a1f2e;
+  --primary: #e6edf3;
+  --secondary: #9aa4b3;
+  --tertiary: #1a1f2e;
+  --content: #e6edf3;
+  --code-block-bg: #1a1f2e;
+  --code-bg: rgb(255 255 255 / 0.05);
+  --border: rgb(255 255 255 / 0.1);
+}
+
+/* Orange as the single accent: links, active nav, buttons */
+.post-content a,
+.post-entry:hover .entry-header h2,
+#menu a.active {
+  color: var(--hlf-orange);
+}
+
+.post-content a:hover {
+  color: var(--hlf-orange-light);
+}
+
+a.tag,
+.post-tags a {
+  border: 1px solid var(--border);
+}
+
+a.tag:hover,
+.post-tags a:hover {
+  border-color: var(--hlf-orange);
+  color: var(--hlf-orange);
+}
+
+/* Cards: subtle alpha + lift on hover, like the main site */
+.post-entry {
+  background: rgb(255 255 255 / 0.05);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.2);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.post-entry:hover {
+  transform: translateY(-2px);
+  border-color: var(--hlf-orange-dark);
+  box-shadow: 0 8px 32px rgb(0 0 0 / 0.4);
+}
+
+body:not(.dark) .post-entry {
+  background: rgb(0 0 0 / 0.03);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.05);
+}
+
+/* Inline code gets a hint of brand */
+.post-content code {
+  color: var(--hlf-orange-light);
+}
+
+.post-content pre code {
+  color: inherit;
+}
+
+/* System font stack, same as the main site */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+}

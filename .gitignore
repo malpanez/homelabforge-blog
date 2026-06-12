@@ -1,0 +1,9 @@
+public/
+resources/
+.hugo_build.lock
+
+# Migration working files — not part of the published site
+BLOG_MIGRATION_HANDOFF.md
+hashnode-two-phantom-diffs.md
+homelabforge-papermod.css
+.planning/

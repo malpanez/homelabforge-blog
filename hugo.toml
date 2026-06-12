@@ -1,0 +1,57 @@
+baseURL = "https://blog.homelabforge.dev/"
+title = "HomelabForge"
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[permalinks]
+  posts = "/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  series = "series"
+
+[pagination]
+  pagerSize = 10
+
+[markup]
+  [markup.highlight]
+    style = "github-dark"
+    noClasses = true
+    lineNos = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[outputs]
+  home = ["html", "rss"]
+
+[outputFormats]
+  [outputFormats.rss]
+    mediatype = "application/rss+xml"
+    baseName = "rss"
+
+[params]
+  description = "Production DevOps for Homelabs"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowRssButtonInSectionTermList = true
+
+  [params.homeInfoParams]
+    Title = "HomelabForge"
+    Content = "Production DevOps for Homelabs"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
