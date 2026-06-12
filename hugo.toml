@@ -44,6 +44,19 @@ enableRobotsTXT = true
     Title = "HomelabForge"
     Content = "Production DevOps for Homelabs"
 
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/malpanez"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/miguel-alpa%C3%B1ez/"
+  [[params.socialIcons]]
+    name = "x"
+    url = "https://x.com/malpanez"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/rss.xml"
+
 [menu]
   [[menu.main]]
     identifier = "posts"
