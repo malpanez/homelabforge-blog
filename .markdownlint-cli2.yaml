@@ -1,0 +1,20 @@
+ignores:
+  - "themes/**"
+  - "BLOG_MIGRATION_HANDOFF.md"
+  - "hashnode-two-phantom-diffs.md"
+  - "homelabforge.dev Bllog/**"
+
+config:
+  # Migrated posts are kept byte-faithful to the Hashnode originals;
+  # rules below conflict with that content style.
+  MD001: false # heading increments — original post structure
+  MD013: false # line length — prose and converted HTML use long lines
+  MD025: false # multiple H1 — original posts use # for sections
+  MD026: false # trailing punctuation in headings
+  MD029: false # ordered list prefixes — lists intentionally resume after code blocks
+  MD030: false # list marker spacing — pandoc gfm output style
+  MD033: false # inline HTML
+  MD034: false # bare URLs — present in original posts
+  MD036: false # emphasis used as heading
+  MD041: false # first line need not be a heading (front matter)
+  MD059: false # link text — original posts use "here" links

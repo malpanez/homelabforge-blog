@@ -49,7 +49,7 @@ Then I applied it.
 
 The apply created the ACL, executed the state move… and then hung on the lifecycle configuration until the provider gave up:
 
-```
+```text
 Error: waiting for S3 Bucket Lifecycle Configuration ... timeout while waiting for state
 ```
 
@@ -87,7 +87,7 @@ Since the module defines no storage-class transitions, the attribute is inert an
 
 With the import done and `v1.0.1` consumed, I expected `No changes`. Instead:
 
-```
+```text
 ~ resource "aws_s3_bucket_lifecycle_configuration" "backups" {
     # rule positions 2 and 3 swapped: weekly <-> monthly
   }
@@ -118,7 +118,7 @@ rule { id = "expire-weekly"  ... }
 
 It feels wrong to let a storage backend dictate your declaration order, but it's the only idempotent option short of forking the provider. That shipped as `v1.0.2`, and the stack finally reached the only acceptable end state:
 
-```
+```text
 No changes. Your infrastructure matches the configuration.
 ```
 
