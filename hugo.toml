@@ -42,7 +42,7 @@ enableRobotsTXT = true
 
   [params.label]
     text = "HomelabForge"
-    icon = "/assets/img/hero-logo-256.png"
+    icon = "/apple-touch-icon.png"
     iconHeight = 32
   ShowReadingTime = true
   ShowCodeCopyButtons = true
